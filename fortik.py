@@ -94,6 +94,8 @@ source = """
 : fact dup 1 < ifelse fact1 fact2 ;
 5 fact ."""
 
+source='2 4 - .'
+
 words, stack = {}, []
 execute(words, stack, parse(words, source.split()))
 repl(words, stack)
